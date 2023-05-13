@@ -1,11 +1,14 @@
 --Creacion de las tablas en SQL, basadas en el diagrama de clases
 
+--Restriccion de caracteres:
+--RFC: 13, Inicial vocal y consonante apell pat, inicial apell mat, fechaNac, homoclave 3 caracteres
+--Telefono: 10 
 create table Fabricante(
 	--Declaracion de columnas
-	RFC char(13) not null, --Inicial vocal y consonante apell pat, inicial apell mat, fechaNac, homoclave 3 caracteres
+	RFC char(13) not null, 
 	Nom varchar(50) not null,
 	Dir varchar(50) not null,
-	Tel int(10) not null,
+	Tel bigint not null,
 	--Llaves primarias
 	constraint pk_fabricante primary key (RFC)
 );

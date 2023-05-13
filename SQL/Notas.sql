@@ -5,7 +5,7 @@
 --	posicion text
 --)inherits (tabla);
 --...........................................
---FUnciones sobre tipos de datos en sql
+--Funciones sobre tipos de datos en sql
 
 --CHAR. Para almacenar cadenas de caracteres de longitud fija, ejemplo: genero(M/F) MAX:255
 --VARCHAR. Para almacenar cadenas de caracteres de longitud variable, ejemplo: direccion MAX:65535
