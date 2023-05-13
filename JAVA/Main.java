@@ -9,7 +9,8 @@ public class Main {
 		BaseDatos conexion =  new BaseDatos();
 		ResultSet result;
 
-		int Tel;
+		//int Tel;
+		String Tel;
 		String Rfc,Nom,Dir;
 		
 		result = conexion.getQuery("select * from Fabricante");
@@ -17,7 +18,8 @@ public class Main {
 		{
 			while(result.next())
 			{
-				Tel = result.getInt("Tel");
+				//Tel = result.getInt("Tel");
+				Tel = result.getString("Tel");
 				Nom = result.getString("Nom");
 				Rfc = result.getString("RFC");
 				Dir = result.getString("Dir");
