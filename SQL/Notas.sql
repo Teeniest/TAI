@@ -5,6 +5,7 @@
 --	posicion text
 --)inherits (tabla);
 --...........................................
+
 --Funciones sobre tipos de datos en sql
 
 --CHAR. Para almacenar cadenas de caracteres de longitud fija, ejemplo: genero(M/F) MAX:255
@@ -12,7 +13,7 @@
 --INT. Valores enteros MAX:4294967295
 --DECIMAL(size,d). Valores decimales MAX: 65(size) y 30(d)
 
---Funciones sobre tablas en sql
+--Funciones sobre creacion, modificacion, borrado de tablas en sql
 
 --CREATE. Cree un índice o tabla que aún no existe.
 --ALTERModifique una tabla o columna existente.
