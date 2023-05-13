@@ -2,10 +2,10 @@
 
 create table Fabricante(
 	--Declaracion de columnas
-	RFC char not null,
-	Nom char not null,
-	Dir char not null,
-	Tel int not null,
+	RFC char(13) not null, --Inicial vocal y consonante apell pat, inicial apell mat, fechaNac, homoclave 3 caracteres
+	Nom varchar(50) not null,
+	Dir varchar(50) not null,
+	Tel int(10) not null,
 	--Llaves primarias
 	constraint pk_fabricante primary key (RFC)
 );
