@@ -6,5 +6,7 @@
 --)inherits (tabla);
 --...........................................
 
---CHAR. Para almacenar cadenas de caracteres de longitud fija, ejemplo: genero(M/F)
---VARCHAR. Para almacenar cadenas de caracteres de longitud variable, ejemplo: direccion
+--CHAR. Para almacenar cadenas de caracteres de longitud fija, ejemplo: genero(M/F) MAX:255
+--VARCHAR. Para almacenar cadenas de caracteres de longitud variable, ejemplo: direccion MAX:65535
+--INT. Valores enteros MAX:4294967295
+--DECIMAL(size,d). Valores decimales MAX: 65(size) y 30(d)
