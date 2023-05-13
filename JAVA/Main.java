@@ -1,4 +1,4 @@
-package bdEjemplo;
+package pf_Stark;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,25 +7,26 @@ public class Main
 {
 	public static void main (String []args)
 	{
-		MiBD conexion =  new MiBD();
+		PF_Stark conexion =  new PF_Stark();
 		ResultSet result;
-		int id;
-		String nombre,ap_pat,ap_mat;
+
+		Int Tel;
+		String Rfc,Nom,Dir;
 		
-		result = conexion.getQuery("select * from personas");
+		result = conexion.getQuery("select * from Fabricantes");
 		try
 		{
 			while(result.next())
 			{
-				id = result.getInt("Id");
-				nombre = result.getString("Nombre");
-				ap_pat = result.getString("Ap_Pat");
-				ap_mat = result.getString("Ap_Mat");
+				Tel = result.getInt("Tel");
+				Nom = result.getString("Nom");
+				Rfc = result.getString("RFC");
+				Dir = result.getString("Dir");
 				
-				System.out.println ("\nID Maestro: " + id);
-				System.out.println("Nombre Maestro: " +  nombre);
-				System.out.println("Apellido Paterno: " + ap_pat);
-				System.out.println("Apellido Materno: " + ap_mat);
+				System.out.println("Nombre: " +  Nom);
+				System.out.println("RFC: " + Rfc);
+				System.out.println("Direccion: " + Dir);
+				System.out.println ("\nTelefono: " + Tel);
 			}
 		}
 		catch (SQLException e)
