@@ -1,19 +1,18 @@
-package pf_Stark;
+package pfStark;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Main 
-{
+public class Main {
 	public static void main (String []args)
 	{
-		PF_Stark conexion =  new PF_Stark();
+		BaseDatos conexion =  new BaseDatos();
 		ResultSet result;
 
-		Int Tel;
+		int Tel;
 		String Rfc,Nom,Dir;
 		
-		result = conexion.getQuery("select * from Fabricantes");
+		result = conexion.getQuery("select * from Fabricante");
 		try
 		{
 			while(result.next())
@@ -23,10 +22,10 @@ public class Main
 				Rfc = result.getString("RFC");
 				Dir = result.getString("Dir");
 				
-				System.out.println("Nombre: " +  Nom);
+				System.out.println("\nNombre: " +  Nom);
 				System.out.println("RFC: " + Rfc);
 				System.out.println("Direccion: " + Dir);
-				System.out.println ("\nTelefono: " + Tel);
+				System.out.println ("Telefono: " + Tel);
 			}
 		}
 		catch (SQLException e)
