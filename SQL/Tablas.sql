@@ -35,7 +35,7 @@ create table Distribuidor(
 	constraint pk_distribuidor primary key (RFC_distr)
 );
 create table Ingeniero(
-	ID_ing char(12)) not null, --Se considera alfanumerico de 12 caract
+	ID_ing char(12) not null, --Se considera alfanumerico de 12 caract
 	Ced char(10) not null,
 	GEM varchar(20) not null,	  --Nombre completo del grado
 	Nom varchar(50) not null,
@@ -66,10 +66,10 @@ create table Dimensiones (
 --Tablas que se desprenden de una relacion entre 2 tablas 
 create table Pie_Arm (
 	CTP int,
-	CP int,
+	CP int
 );
 create table Arm_Ing (
-	CAF int,
+	CAF int
 );
 create table Dis_Arm (
 	ID_vta char(10),	--Se considera alfanumerico de 10 caract
