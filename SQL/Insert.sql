@@ -1,0 +1,1 @@
+insert into departamento values ('Alquimia', 1);
