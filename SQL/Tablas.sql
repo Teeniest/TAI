@@ -3,6 +3,8 @@
 --Restriccion de caracteres:
 --RFC: 13, Inicial vocal y consonante apell pat, inicial apell mat, fechaNac, homoclave 3 caracteres
 --Telefono: 10 
+--Direccion: Calle, numero, colonia, codigo postal ,estado, ciudad, pais
+--Cedula prof: 10, 4 dígitos que identifican al profesional y 6 correspondientes al número de emisión asignado a la cédula.
 create table Fabricante(
 	--Declaracion de columnas
 	RFC char(13) not null, 
