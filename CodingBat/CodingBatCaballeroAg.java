@@ -50,9 +50,13 @@ diff21(21) → 0
 */
 public int diff21(int n) {
   int res=n-21;
+  if (n>21) {
+  	res=2*(res);
+  	return res;
+  }
   if(res<0){
   	res=res*-1;
   	return res;
   }
-
+  return res;
 }
