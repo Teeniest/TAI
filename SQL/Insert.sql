@@ -81,13 +81,16 @@ insert into Categoria values ('lowerBody','0.35');
 insert into Categoria values ('upperBody','brazo');
 insert into Categoria values ('pzaGrande','ninguna');
 
-
-
-
-    
-
-
-
+insert into Dimensiones values ('0.45','0.53','1.43');	
+insert into Dimensiones values ('0.34','0.32','0.25');	
+insert into Dimensiones values ('0.64','0.54','0.64');	
+insert into Dimensiones values ('0.15','0.85','1.43');	
+insert into Dimensiones values ('0.73','0.97','0.25');	
+insert into Dimensiones values ('0.78','0.84','1.75');	
+insert into Dimensiones values ('0.14','0.87','1.13');	
+insert into Dimensiones values ('0.76','0.42','1.74');	
+insert into Dimensiones values ('0.96','0.51','0.64');	
+insert into Dimensiones values ('0.54','0.12','0.86');	
 
 
 
