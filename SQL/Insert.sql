@@ -65,6 +65,7 @@ insert into Ingeniero values ('MEMW6359107MY','Edelmiro Toribio Gomez Ferreras',
 insert into Ingeniero values ('NIZR2306894CÑ','Emiliano Puig', 'Azueta, #1712, Centro, 82000, Mazatlan, Sinaloa, Mexico',2154867627;    
 insert into Ingeniero values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Perez, #1004, Centro, 91700, Veracruz, Veracruz, Mexico',8103149467);    
     
+--armadura()
 
 
 
