@@ -103,64 +103,24 @@ insert into Arm_Ing values(5);
 insert into Arm_Ing values(76);
 insert into Arm_Ing values(58);
 
+insert into Pie_Arm values(17,41);
+insert into Pie_Arm values(19,2);
+insert into Pie_Arm values(22,7);
+insert into Pie_Arm values(25,6);
+insert into Pie_Arm values(4,4);
+insert into Pie_Arm values(19,9);
+insert into Pie_Arm values(6,3);
+insert into Pie_Arm values(2,5);
+insert into Pie_Arm values(12,14);
+insert into Pie_Arm values(31,24);
 
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+insert into Dis_Arm values(17/07/2021);
+insert into Dis_Arm values(24/02/2019);
+insert into Dis_Arm values(23/11/2022);
+insert into Dis_Arm values(30/12/2019);
+insert into Dis_Arm values(15/07/2023);
+insert into Dis_Arm values(23/16/2015);
+insert into Dis_Arm values(29/19/2017);
+insert into Dis_Arm values(29/12/2018);
+insert into Dis_Arm values(29/01/2023);
+insert into Dis_Arm values(16/09/2023);
