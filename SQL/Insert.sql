@@ -19,7 +19,18 @@ insert into Fabricante values ('HETL850904XU7', 'Luis Roberto Hernandez Torres',
 
 
 --Piezas (id_pza, linea, color)
-insert into Piezas values('','','Azul')
+insert into Piezas values('001','Azul')
+insert into Piezas values('001','Rojo')
+insert into Piezas values('002','Rojo')
+insert into Piezas values('002','Verde')
+insert into Piezas values('003','Negro')
+insert into Piezas values('002','Naranja')
+insert into Piezas values('005','Amarillo')
+insert into Piezas values('003','Rosa')
+insert into Piezas values('004','Blanco')
+insert into Piezas values('001','Negro')
+
+
 
 
 
