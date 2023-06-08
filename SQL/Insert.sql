@@ -92,7 +92,16 @@ insert into Dimensiones values ('0.76','0.42','1.74');
 insert into Dimensiones values ('0.96','0.51','0.64');	
 insert into Dimensiones values ('0.54','0.12','0.86');	
 
-
+insert into Arm_Ing values(12);
+insert into Arm_Ing values(1);
+insert into Arm_Ing values(31);
+insert into Arm_Ing values(4);
+insert into Arm_Ing values(16);
+insert into Arm_Ing values(20);
+insert into Arm_Ing values(7);
+insert into Arm_Ing values(5);
+insert into Arm_Ing values(76);
+insert into Arm_Ing values(58);
 
 
 
