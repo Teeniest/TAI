@@ -54,24 +54,32 @@ insert into Ingeniero values ('Amparo Piña Noguera', 'ZEGN8724375ZC','Magister'
 insert into Ingeniero values ('Estela Palomo Saldaña', 'VAJT3728428ZZ','Licenciado',5036003785);
 
 --Cliente(RFC, nombre, Direccion, Tel)
-insert into Ingeniero values ('HOMB7638996ÑÑ','Lara Beltran-Solé', 'Aquiles Serdan, #203,Baltazar, 72550, Puebla, Puebla, Mexico',0507668057);
-insert into Ingeniero values ('RIFH5742707DN','Máximo Garzón Ferreras', 'Ruta matamoros, #7803,Mariano, 22206, Tijuana, Baja California, Mexico',0677554623);
-insert into Ingeniero values ('LIZG7911705XS','Tere Salvà', 'Poniente, #2304, San Antonio, 75480, Tecamachalco, Puebla, Mexico',3812620856);
-insert into Ingeniero values ('QIDJ0993026RD','Rosalinda Carrasco Osorio', 'Ingenieros militares, #36, Lomas de sotelo, 55908, Toluca, Estado de Mexico, Mexico',9986250893;
-insert into Ingeniero values ('ÑOLV3170437KG','Encarnación Iborra Torrens', 'Juan Bautista, #75, Altamirano, 40660, Pungarabato, Guerrero, Mexico',3459124965);
-insert into Ingeniero values ('DATD3914462BV','Celestina Vázquez-Llanos', 'Vicente Camacho, #3213, Chapalita, Guadalajara, Jalisco',8755532651);
-insert into Ingeniero values ('PAXZ8223686XX','Rodrigo Pascual Recio', 'Paseo del hospicio, #22, San Juan, 44360, Guadalajara, Jalisco, Mexico',5394662050); 	
-insert into Ingeniero values ('MEMW6359107MY','Edelmiro Toribio Gomez Ferreras', 'Guatemala, #3863, Juarez, 22145, Nuevo Laredo, Tamaulipas, Mexico',2207364124);
-insert into Ingeniero values ('NIZR2306894CÑ','Emiliano Puig', 'Azueta, #1712, Centro, 82000, Mazatlan, Sinaloa, Mexico',2154867627;    
-insert into Ingeniero values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Perez, #1004, Centro, 91700, Veracruz, Veracruz, Mexico',8103149467);    
+insert into Cliente values ('HOMB7638996ÑÑ','Lara Beltran-Solé', 'Aquiles Serdan, #203,Baltazar, 72550, Puebla, Puebla, Mexico',0507668057);
+insert into Cliente values ('RIFH5742707DN','Máximo Garzón Ferreras', 'Ruta matamoros, #7803,Mariano, 22206, Tijuana, Baja California, Mexico',0677554623);
+insert into Cliente values ('LIZG7911705XS','Tere Salvà', 'Poniente, #2304, San Antonio, 75480, Tecamachalco, Puebla, Mexico',3812620856);
+insert into Cliente values ('QIDJ0993026RD','Rosalinda Carrasco Osorio', 'Ingenieros militares, #36, Lomas de sotelo, 55908, Toluca, Estado de Mexico, Mexico',9986250893;
+insert into Cliente values ('ÑOLV3170437KG','Encarnación Iborra Torrens', 'Juan Bautista, #75, Altamirano, 40660, Pungarabato, Guerrero, Mexico',3459124965);
+insert into Cliente values ('DATD3914462BV','Celestina Vázquez-Llanos', 'Vicente Camacho, #3213, Chapalita, Guadalajara, Jalisco',8755532651);
+insert into Cliente values ('PAXZ8223686XX','Rodrigo Pascual Recio', 'Paseo del hospicio, #22, San Juan, 44360, Guadalajara, Jalisco, Mexico',5394662050); 	
+insert into Cliente values ('MEMW6359107MY','Edelmiro Toribio Gomez Ferreras', 'Guatemala, #3863, Juarez, 22145, Nuevo Laredo, Tamaulipas, Mexico',2207364124);
+insert into Cliente values ('NIZR2306894CÑ','Emiliano Puig', 'Azueta, #1712, Centro, 82000, Mazatlan, Sinaloa, Mexico',2154867627;    
+insert into Cliente values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Perez, #1004, Centro, 91700, Veracruz, Veracruz, Mexico',8103149467);    
     
+--Herencias
+
 --armadura()
 
-
-
-
-
-
+--Categoria(piezas)
+insert into Categoria values ('pzaGrande','ninguna');
+insert into Categoria values ('pzaChica','ninguna');
+insert into Categoria values ('pzaGrande','ninguna');
+insert into Categoria values ('pzaChica','ninguna');
+insert into Categoria values ('pzaGrande','ninguna');
+insert into Categoria values ('pzaGrande','ninguna');
+insert into Categoria values ('upperBody','casco');
+insert into Categoria values ('lowerBody','0.35');
+insert into Categoria values ('upperBody','brazo');
+insert into Categoria values ('pzaGrande','ninguna');
 
 
 

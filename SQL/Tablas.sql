@@ -15,64 +15,64 @@ create table Fabricante(
 	constraint pk_fabricante primary key (RFC)
 );
 create table Piezas(
-	ID_pza char(10) not null, --Se considera alfanumerico de 10 caract
-	Lin int not null,	  --Se considera numerico de 6 caract
+	ID_pza serial not null, 
+	Lin int not null,	  --Se considera numerico de 3 caract
 	Color varchar(20) not null,  --Nombre completo del color
 	--Llaves primarias
 	constraint pk_piezas primary key (ID_pza)
 );
 create table Armadura(
-	No_serie char(10) not null,--Se considera alfanumerico de 10 caract
+	No_serie serial(10) not null,
 	--Llaves primarias
 	constraint pk_armadura primary key (No_serie)
 );
 create table Distribuidor(
+	Nom varchar(50) not null,
 	RFC_distr char(13) not null,
 	Tel bigint not null,
 	Dir varchar(150) not null,
-	Nom varchar(50) not null,
 	--Llaves primarias
 	constraint pk_distribuidor primary key (RFC_distr)
 );
 create table Ingeniero(
-	ID_ing char(12) not null, --Se considera alfanumerico de 12 caract
+	ID_ing serial not null, 
+	Nom varchar(50) not null,
 	Ced char(10) not null,
 	GEM varchar(20) not null,	  --Nombre completo del grado
-	Nom varchar(50) not null,
 	Tel bigint not null,
 	--Llaves primarias
 	constraint pk_ingeniero primary key (ID_ing)
 );
 create table Cliente(
 	RFC char(13) not null,
+	Nom varchar(50) not null,
 	Dir varchar(150) not null,
 	Tel bigint not null,
-	Nom varchar(50) not null,
 	--Llaves primarias
 	constraint pk_cliente primary key (RFC)
 );
 
 create table Categoria (
-	ID_cat char(10),	--Se considera alfanumerico de 10 caract
-	Nom varchar(9),	    --Categorias: pzgrande,pzachica,lowerbody,upperbody(Maximo 9 caracteres)
+	ID_cat serial,	
+	Nom varchar(9) check(Nom in ('pzgrande','pzachica','lowerbody','upperbody')),	    --Categorias: pzgrande,pzachica,lowerbody,upperbody(Maximo 9 caracteres)
 	Info varchar(5)		--lower body: Altura y upperbody: tipo(brazo, pecho,casco)
-);
+); inherits(Piezas);
 create table Dimensiones (
-	ID_pza char(10),	--Se considera alfanumerico de 10 caract
+	ID_pza serial,
 	Ancho decimal(4,4),
 	Alto decimal(4,4),
 	Largo decimal(4,4)
-);
+);inherits(Piezas);
 --Tablas que se desprenden de una relacion entre 2 tablas 
 create table Pie_Arm (
 	CTP int,
 	CP int
-);
+); 
 create table Arm_Ing (
 	CAF int
 );
 create table Dis_Arm (
-	ID_vta char(10),	--Se considera alfanumerico de 10 caract
+	ID_vta serial,
 	F_Vta date,
 	constraint pk_Dis_Arm primary key (ID_vta)
 );
