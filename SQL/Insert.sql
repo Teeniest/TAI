@@ -41,6 +41,45 @@ insert into Distribuidor values ('Nebowi', 'XOVL1451699KQ',7089911367, 'Lindavis
 insert into Distribuidor values ('QUEWO', 'MUQF1675506DC',7031633413, 'Cuenca dos, #57,Volcan, 77537, Puerto Vallarta, Jalisco, Mexico');
 insert into Distribuidor values ('Vake', 'FUÑR1772079VJ',6128717766, 'Via libre, #57,Conejo, 24788, Playa del Carmen, Quintana Roo, Mexico');
 
+--Ingeniero(nombre,No_cedula,Grado de estudios maximo, Tel)
+insert into Ingeniero values ('Rocío Blázquez Rincón', 'SANC5752983ZW','Licenciado',2331593253);
+insert into Ingeniero values ('Loreto Piquer Torrijos', 'SEMQ9650011HY','Licenciado',8764342621);
+insert into Ingeniero values ('Consuelo Pilar Heras Pinedo', 'GEFV2747869ÑH','Doctorado',5398052314);
+insert into Ingeniero values ('Selena de Murcia', 'TOCT5304972FX','Doctorado',1752516538);
+insert into Ingeniero values ('Abilio Prado Calderón', 'YUFC9051559BÑ','Magister',9121561066);
+insert into Ingeniero values ('Alejo Salvador Becerra', 'GIGM6454913GW','Licenciado',2441724673);
+insert into Ingeniero values ('Ramón Duran Riera', 'QARJ7700029GK','Licenciado',3801484212);
+insert into Ingeniero values ('Iris de Oliveras', 'JAFY2986221WJ','Doctorado',9732075274);
+insert into Ingeniero values ('Amparo Piña Noguera', 'ZEGN8724375ZC','Magister',4878562927);
+insert into Ingeniero values ('Estela Palomo Saldaña', 'VAJT3728428ZZ','Licenciado',5036003785);
+
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
