@@ -10,8 +10,8 @@ public class Main {
 		ResultSet result;
 
 		//int Tel;
-		String Tel;
-		String Rfc,Nom,Dir;
+		String id_pza;
+		String ancho,col,info_cat,Linea,alto,largo,fabricante;
 		
 		result = conexion.getQuery("select * from Piezas");
 		try
@@ -19,8 +19,8 @@ public class Main {
 			while(result.next())
 			{
 				//Tel = result.getInt("Tel");
-				id_pza = result.getInt("ID_pza");
-				Linea = result.getInt("Lin");
+				id_pza = result.getString("ID_pza");
+				Linea = result.getString("Lin");
 				col = result.getString("Color");
 				info_cat = result.getString("Inf_cat");
 				ancho = result.getString("Ancho");
@@ -42,6 +42,8 @@ public class Main {
 		{
 			e.printStackTrace();
 		}
+		//Interfaz grafica
+		interfazGraf menu =  new interfazGraf();
 		
 	}
 }
