@@ -59,15 +59,47 @@ create table Cliente(
 
 --Tablas que se desprenden de una relacion entre 2 tablas 
 create table Pie_Arm (
+	--relacion
+	ID_pza int,
+	No_serie_arm int,
 	CTP int,
-	CP int
+	CP int,
+	constraint fk_pzaarm_pza
+	foreign key (ID_pza) references Piezas(ID_pza)
+		on update cascade
+		on delete cascade,
+	constraint fk_pzaarm_arm
+	foreign key (No_serie_arm) references Armadura(No_serie)
+		on update cascade
+		on delete cascade
 ); 
 create table Arm_Ing (
-	CAF int
+	No_serie_arm int,
+	ID_ing int,
+	CAF int,
+
+	constraint fk_arming_arm
+	foreign key (No_serie_arm) references Armadura(No_serie)
+		on update cascade
+		on delete cascade,
+	constraint fk_arming_ing
+	foreign key (ID_ing) references Ingeniero(ID_ing)
+		on update cascade
+		on delete cascade
 );
 create table Dis_Arm (
+	RFC_distr char(13),
+	No_serie_arm int,
 	ID_vta serial,
 	F_Vta date,
-	constraint pk_Dis_Arm primary key (ID_vta)
+
+	constraint fk_disarm_dis
+	foreign key (RFC_distr) references Distribuidor(RFC_distr)
+		on update cascade
+		on delete cascade,
+	constraint fk_disarm_arm
+	foreign key (No_serie_arm) references Armadura(No_serie)
+		on update cascade
+		on delete cascade
 );
 

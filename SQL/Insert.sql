@@ -72,16 +72,16 @@ insert into Cliente values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Pere
 
 --Categoria(piezas)
 
-insert into Arm_Ing values(12);
-insert into Arm_Ing values(1);
-insert into Arm_Ing values(31);
-insert into Arm_Ing values(4);
-insert into Arm_Ing values(16);
-insert into Arm_Ing values(20);
-insert into Arm_Ing values(7);
-insert into Arm_Ing values(5);
-insert into Arm_Ing values(76);
-insert into Arm_Ing values(58);
+insert into Arm_Ing(CAF) values(12);
+insert into Arm_Ing(CAF) values(1);
+insert into Arm_Ing(CAF) values(31);
+insert into Arm_Ing(CAF) values(4);
+insert into Arm_Ing(CAF) values(16);
+insert into Arm_Ing(CAF) values(20);
+insert into Arm_Ing(CAF) values(7);
+insert into Arm_Ing(CAF) values(5);
+insert into Arm_Ing(CAF) values(76);
+insert into Arm_Ing(CAF) values(58);
 
 insert into Pie_Arm values(17,41);
 insert into Pie_Arm values(19,2);
