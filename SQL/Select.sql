@@ -1,1 +1,1 @@
-Select * from Fabricante;
+Select * from Piezas;
