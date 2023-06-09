@@ -19,16 +19,16 @@ insert into Fabricante values ('HETL850904XU7', 'Luis Roberto Hernandez Torres',
 
 
 --Piezas (id_pza, linea, color)
-insert into Piezas (Lin,Color)values('001','Azul','pzaGrande','no',0.45,0.53,1.43);
-insert into Piezas (Lin,Color)values('001','Rojo','pzaChica','no',0.34,0.32,0.25);
-insert into Piezas (Lin,Color)values('002','Rojo','pzaGrande','no',0.64,0.54,0.64);
-insert into Piezas (Lin,Color)values('002','Verde','pzaChica','no',0.15,0.85,1.43);
-insert into Piezas (Lin,Color)values('003','Negro','pzaGrande','no',0.73,0.97,0.25);
-insert into Piezas (Lin,Color)values('002','Naranja','pzaGrande','no',0.78,0.84,1.75);
-insert into Piezas (Lin,Color)values('005','Amarillo','upperBody','casco',0.14,0.87,1.13));
-insert into Piezas (Lin,Color)values('003','Rosa','lowerBody',0.35,0.76,0.42,1.74);
-insert into Piezas (Lin,Color)values('004','Blanco','upperBody','brazo',0.96,0.51,0.64);
-insert into Piezas (Lin,Color)values('001','Negro','pzaGrande','no',0.54,0.12,0.86);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('001','Azul','pzaGrande',null,0.45,0.53,1.43);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('001','Rojo','pzaChica',null,0.34,0.32,0.25);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('002','Rojo','pzaGrande',null,0.64,0.54,0.64);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('002','Verde','pzaChica',null,0.15,0.85,1.43);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('003','Negro','pzaGrande',null,0.73,0.97,0.25);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('002','Naranja','pzaGrande',null,0.78,0.84,1.75);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('005','Amarillo','upperBody','casco',0.14,0.87,1.13);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('003','Rosa','lowerBody',0.35,0.76,0.42,1.74);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('004','Blanco','upperBody','brazo',0.96,0.51,0.64);
+insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('001','Negro','pzaGrande',null,0.54,0.12,0.86);
 
 
 --Distribuidor (Nombre, RFC, tel, Direccion)

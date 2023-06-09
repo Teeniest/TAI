@@ -20,9 +20,9 @@ create table Piezas(
 	Color varchar(20) not null,  --Nombre completo del color
 	Cat varchar(9) not null, --Categorias: pzgrande,pzachica,lowerbody,upperbody(Maximo 9 caracteres)
 	Inf_cat varchar(5),		--lower body: Altura y upperbody: tipo(brazo, pecho,casco)
-	Ancho decimal(4,4) not null,
-	Alto decimal(4,4) not null,
-	Largo decimal(4,4) not null,
+	Ancho decimal(4,2) not null,
+	Alto decimal(4,2) not null,
+	Largo decimal(4,2) not null,
 	--Llaves primarias
 	constraint pk_piezas primary key (ID_pza)
 );
