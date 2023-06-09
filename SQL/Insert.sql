@@ -19,16 +19,16 @@ insert into Fabricante values ('HETL850904XU7', 'Luis Roberto Hernandez Torres',
 
 
 --Piezas (id_pza, linea, color)
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('001','Azul','pzaGrande',null,0.45,0.53,1.43);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('001','Rojo','pzaChica',null,0.34,0.32,0.25);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('002','Rojo','pzaGrande',null,0.64,0.54,0.64);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('002','Verde','pzaChica',null,0.15,0.85,1.43);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('003','Negro','pzaGrande',null,0.73,0.97,0.25);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('002','Naranja','pzaGrande',null,0.78,0.84,1.75);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('005','Amarillo','upperBody','casco',0.14,0.87,1.13);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('003','Rosa','lowerBody',0.35,0.76,0.42,1.74);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('004','Blanco','upperBody','brazo',0.96,0.51,0.64);
-insert into Piezas (Lin,Color,Cat,Inf_cat,Ancho,Alto,Largo)values('001','Negro','pzaGrande',null,0.54,0.12,0.86);
+insert into Piezas values(57463,'001','Azul','pzaGrande',null,0.45,0.53,1.43);
+insert into Piezas values(91274,'001','Rojo','pzaChica',null,0.34,0.32,0.25);
+insert into Piezas values(12545,'002','Rojo','pzaGrande',null,0.64,0.54,0.64);
+insert into Piezas values(08074,'002','Verde','pzaChica',null,0.15,0.85,1.43);
+insert into Piezas values(97462,'003','Negro','pzaGrande',null,0.73,0.97,0.25);
+insert into Piezas values(91674,'002','Naranja','pzaGrande',null,0.78,0.84,1.75);
+insert into Piezas values(47174,'005','Amarillo','upperBody','casco',0.14,0.87,1.13);
+insert into Piezas values(08457,'003','Rosa','lowerBody',0.35,0.76,0.42,1.74);
+insert into Piezas values(97346,'004','Blanco','upperBody','brazo',0.96,0.51,0.64);
+insert into Piezas values(97126,'001','Negro','pzaGrande',null,0.54,0.12,0.86);
 
 
 --Distribuidor (Nombre, RFC, tel, Direccion)
@@ -43,16 +43,16 @@ insert into Distribuidor values ('QUEWO', 'MUQF1675506DC',7031633413, 'Cuenca do
 insert into Distribuidor values ('Vake', 'FUÑR1772079VJ',6128717766, 'Via libre, #57,Conejo, 24788, Playa del Carmen, Quintana Roo, Mexico');
 
 --Ingeniero(nombre,No_cedula,Grado de estudios maximo, Tel)
-insert into Ingeniero (Nom,Ced,GEM,Tel) values ('Rocío Blázquez Rincón', 'SANC5752983ZW','Licenciado',2331593253);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Loreto Piquer Torrijos', 'SEMQ9650011HY','Licenciado',8764342621);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Consuelo Pilar Heras Pinedo', 'GEFV2747869ÑH','Doctorado',5398052314);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Selena de Murcia', 'TOCT5304972FX','Doctorado',1752516538);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Abilio Prado Calderón', 'YUFC9051559BÑ','Magister',9121561066);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Alejo Salvador Becerra', 'GIGM6454913GW','Licenciado',2441724673);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Ramón Duran Riera', 'QARJ7700029GK','Licenciado',3801484212);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Iris de Oliveras', 'JAFY2986221WJ','Doctorado',9732075274);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Amparo Piña Noguera', 'ZEGN8724375ZC','Magister',4878562927);
-insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Estela Palomo Saldaña', 'VAJT3728428ZZ','Licenciado',5036003785);
+insert into Ingeniero values (73613,'Rocío Blázquez Rincón', 'SANC5752983ZW','Licenciado',2331593253);
+insert into Ingeniero values (13275,'Loreto Piquer Torrijos', 'SEMQ9650011HY','Licenciado',8764342621);
+insert into Ingeniero values (00283,'Consuelo Pilar Heras Pinedo', 'GEFV2747869ÑH','Doctorado',5398052314);
+insert into Ingeniero values (12890,'Selena de Murcia', 'TOCT5304972FX','Doctorado',1752516538);
+insert into Ingeniero values (83614,'Abilio Prado Calderón', 'YUFC9051559BÑ','Magister',9121561066);
+insert into Ingeniero values (94742,'Alejo Salvador Becerra', 'GIGM6454913GW','Licenciado',2441724673);
+insert into Ingeniero values (01949,'Ramón Duran Riera', 'QARJ7700029GK','Licenciado',3801484212);
+insert into Ingeniero values (97163,'Iris de Oliveras', 'JAFY2986221WJ','Doctorado',9732075274);
+insert into Ingeniero values (09371,'Amparo Piña Noguera', 'ZEGN8724375ZC','Magister',4878562927);
+insert into Ingeniero values (81462,'Estela Palomo Saldaña', 'VAJT3728428ZZ','Licenciado',5036003785);
 
 --Cliente(RFC, nombre, Direccion, Tel)
 insert into Cliente values ('HOMB7638996ÑÑ','Lara Beltran-Solé', 'Aquiles Serdan, #203,Baltazar, 72550, Puebla, Puebla, Mexico',0507668057);
@@ -67,16 +67,16 @@ insert into Cliente values ('NIZR2306894CÑ','Emiliano Puig', 'Azueta, #1712, Ce
 insert into Cliente values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Perez, #1004, Centro, 91700, Veracruz, Veracruz, Mexico',8103149467);    
 
 --Armadura(serial, tipoarmadura, cantidad)
-insert into armadura (tipo_arm,cantidad)values ('Iron man', 2);
-insert into armadura (tipo_arm,cantidad)values ('Traje ikon', 1);
-insert into armadura (tipo_arm,cantidad)values ('Traje cinetico', 4);
-insert into armadura (tipo_arm,cantidad)values ('Cosmos carmesi', 0);
-insert into armadura (tipo_arm,cantidad)values ('Batsuit furtivo', 0);
-insert into armadura (tipo_arm,cantidad)values ('Iron spider', 1);
-insert into armadura (tipo_arm,cantidad)values ('Rocket red', 2);
-insert into armadura (tipo_arm,cantidad)values ('Hellbat', 3);
-insert into armadura (tipo_arm,cantidad)values ('Doom', 1);
-insert into armadura (tipo_arm,cantidad)values ('Justice Buster', 4);
+insert into armadura values (21438,'Iron man', 2);
+insert into armadura values (28731,'Traje ikon', 1);
+insert into armadura values (41255,'Traje cinetico', 4);
+insert into armadura values (64562,'Cosmos carmesi', 0);
+insert into armadura values (25414,'Batsuit furtivo', 0);
+insert into armadura values (22314,'Iron spider', 1);
+insert into armadura values (74742,'Rocket red', 2);
+insert into armadura values (85856,'Hellbat', 3);
+insert into armadura values (01933,'Doom', 1);
+insert into armadura values (03984,'Justice Buster', 4);
     
 --Relaciones
 
@@ -114,3 +114,15 @@ insert into Dis_Arm (F_Vta)values('2017-12-29');
 insert into Dis_Arm (F_Vta)values('2018-12-29');
 insert into Dis_Arm (F_Vta)values('2023-01-29');
 insert into Dis_Arm (F_Vta)values('2023-09-16');
+
+insert into venta_arm(fecha_venta, importe)values('2021-12-25',1355043.54);
+insert into venta_arm(fecha_venta, importe)values('2020-03-30',750000.00);
+insert into venta_arm(fecha_venta, importe)values('2020-11-12',150000.00);
+insert into venta_arm(fecha_venta, importe)values('2016-12-01',250000.00);
+insert into venta_arm(fecha_venta, importe)values('2018-03-04',15000.00);
+insert into venta_arm(fecha_venta, importe)values('2018-01-29',1355000.00);
+insert into venta_arm(fecha_venta, importe)values('2023-12-24',156500.99);
+insert into venta_arm(fecha_venta, importe)values('2023-11-30',876250.00);
+insert into venta_arm(fecha_venta, importe)values('2022-06-12',1597000.50);
+
+

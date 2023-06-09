@@ -15,7 +15,7 @@ create table Fabricante(
 	constraint pk_fabricante primary key (RFC)
 );
 create table Piezas(
-	ID_pza serial not null, 
+	ID_pza int not null, 
 	Lin int not null,	  --Se considera numerico de 3 caract
 	Color varchar(20) not null,  --Nombre completo del color
 	Cat varchar(9) not null, --Categorias: pzgrande,pzachica,lowerbody,upperbody(Maximo 9 caracteres)
@@ -31,7 +31,7 @@ create table Piezas(
 		on delete cascade
 );
 create table Armadura(
-	No_serie serial not null,
+	No_serie int not null,
 	tipo_arm varchar(50)not null,
 	cantidad int not null,
 	--Llaves primarias
@@ -51,7 +51,7 @@ create table Distribuidor(
 		on delete cascade
 );
 create table Ingeniero(
-	ID_ing serial not null, 
+	ID_ing int not null, 
 	Nom varchar(50) not null,
 	Ced char(13) not null,
 	GEM varchar(20) not null,	  --Nombre completo del grado
@@ -89,7 +89,7 @@ create table Pie_Arm (
 	No_serie_arm int,
 	CTP int,
 	CP int,
-	constraint fk_pzaarm_pza primary key (ID_pza,No_serie_arm),
+	constraint fk_pzaarm_pza,
 	foreign key (ID_pza) references Piezas(ID_pza)
 		on update cascade
 		on delete cascade,
@@ -103,7 +103,7 @@ create table Arm_Ing (
 	ID_ing int,
 	CAF int,
 
-	constraint fk_arming_arm primary key (No_serie_arm, ID_ing),
+	constraint fk_arming_arm
 	foreign key (No_serie_arm) references Armadura(No_serie)
 		on update cascade
 		on delete cascade,
@@ -118,7 +118,7 @@ create table Dis_Arm (
 	ID_vta serial,
 	F_Vta date,
 
-	constraint fk_disarm_dis primary key (RFC_distr,No_serie_arm)
+	constraint fk_disarm_dis
 	foreign key (RFC_distr) references Distribuidor(RFC_distr)
 		on update cascade
 		on delete cascade,
