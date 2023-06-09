@@ -28,6 +28,8 @@ create table Piezas(
 );
 create table Armadura(
 	No_serie serial not null,
+	tipo_arm varchar(50)not null,
+	cantidad int not null,
 	--Llaves primarias
 	constraint pk_armadura primary key (No_serie)
 );

@@ -65,10 +65,20 @@ insert into Cliente values ('PAXZ8223686XX','Rodrigo Pascual Recio', 'Paseo del 
 insert into Cliente values ('MEMW6359107MY','Edelmiro Toribio Gomez Ferreras', 'Guatemala, #3863, Juarez, 22145, Nuevo Laredo, Tamaulipas, Mexico',2207364124);
 insert into Cliente values ('NIZR2306894CÑ','Emiliano Puig', 'Azueta, #1712, Centro, 82000, Mazatlan, Sinaloa, Mexico',2154867627);    
 insert into Cliente values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Perez, #1004, Centro, 91700, Veracruz, Veracruz, Mexico',8103149467);    
-    
---Herencias
 
---armadura()
+--Armadura(serial, tipoarmadura, cantidad)
+insert into armadura (tipo_arm,cantidad)values ('Iron man', 2);
+insert into armadura (tipo_arm,cantidad)values ('Traje ikon', 1);
+insert into armadura (tipo_arm,cantidad)values ('Traje cinetico', 4);
+insert into armadura (tipo_arm,cantidad)values ('Cosmos carmesi', 0);
+insert into armadura (tipo_arm,cantidad)values ('Batsuit furtivo', 0);
+insert into armadura (tipo_arm,cantidad)values ('Iron spider', 1);
+insert into armadura (tipo_arm,cantidad)values ('Rocket red', 2);
+insert into armadura (tipo_arm,cantidad)values ('Hellbat', 3);
+insert into armadura (tipo_arm,cantidad)values ('Doom', 1);
+insert into armadura (tipo_arm,cantidad)values ('Justice Buster', 4);
+    
+--Relaciones
 
 --Categoria(piezas)
 
