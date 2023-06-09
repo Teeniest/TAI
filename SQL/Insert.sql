@@ -19,16 +19,16 @@ insert into Fabricante values ('HETL850904XU7', 'Luis Roberto Hernandez Torres',
 
 
 --Piezas (id_pza, linea, color)
-insert into Piezas values('001','Azul');
-insert into Piezas values('001','Rojo');
-insert into Piezas values('002','Rojo');
-insert into Piezas values('002','Verde');
-insert into Piezas values('003','Negro');
-insert into Piezas values('002','Naranja');
-insert into Piezas values('005','Amarillo');
-insert into Piezas values('003','Rosa');
-insert into Piezas values('004','Blanco');
-insert into Piezas values('001','Negro');
+insert into Piezas (Lin,Color)values('001','Azul');
+insert into Piezas (Lin,Color)values('001','Rojo');
+insert into Piezas (Lin,Color)values('002','Rojo');
+insert into Piezas (Lin,Color)values('002','Verde');
+insert into Piezas (Lin,Color)values('003','Negro');
+insert into Piezas (Lin,Color)values('002','Naranja');
+insert into Piezas (Lin,Color)values('005','Amarillo');
+insert into Piezas (Lin,Color)values('003','Rosa');
+insert into Piezas (Lin,Color)values('004','Blanco');
+insert into Piezas (Lin,Color)values('001','Negro');
 
 --Distribuidor (Nombre, RFC, tel, Direccion)
 insert into Distribuidor values ('Piezas Roco', 'FAYF6890728CH',4687649166, 'Calo, #57,Flores del valle, 17445, Tulum, Quintana Roo, Mexico');
@@ -42,27 +42,27 @@ insert into Distribuidor values ('QUEWO', 'MUQF1675506DC',7031633413, 'Cuenca do
 insert into Distribuidor values ('Vake', 'FUÑR1772079VJ',6128717766, 'Via libre, #57,Conejo, 24788, Playa del Carmen, Quintana Roo, Mexico');
 
 --Ingeniero(nombre,No_cedula,Grado de estudios maximo, Tel)
-insert into Ingeniero values ('Rocío Blázquez Rincón', 'SANC5752983ZW','Licenciado',2331593253);
-insert into Ingeniero values ('Loreto Piquer Torrijos', 'SEMQ9650011HY','Licenciado',8764342621);
-insert into Ingeniero values ('Consuelo Pilar Heras Pinedo', 'GEFV2747869ÑH','Doctorado',5398052314);
-insert into Ingeniero values ('Selena de Murcia', 'TOCT5304972FX','Doctorado',1752516538);
-insert into Ingeniero values ('Abilio Prado Calderón', 'YUFC9051559BÑ','Magister',9121561066);
-insert into Ingeniero values ('Alejo Salvador Becerra', 'GIGM6454913GW','Licenciado',2441724673);
-insert into Ingeniero values ('Ramón Duran Riera', 'QARJ7700029GK','Licenciado',3801484212);
-insert into Ingeniero values ('Iris de Oliveras', 'JAFY2986221WJ','Doctorado',9732075274);
-insert into Ingeniero values ('Amparo Piña Noguera', 'ZEGN8724375ZC','Magister',4878562927);
-insert into Ingeniero values ('Estela Palomo Saldaña', 'VAJT3728428ZZ','Licenciado',5036003785);
+insert into Ingeniero (Nom,Ced,GEM,Tel) values ('Rocío Blázquez Rincón', 'SANC5752983ZW','Licenciado',2331593253);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Loreto Piquer Torrijos', 'SEMQ9650011HY','Licenciado',8764342621);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Consuelo Pilar Heras Pinedo', 'GEFV2747869ÑH','Doctorado',5398052314);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Selena de Murcia', 'TOCT5304972FX','Doctorado',1752516538);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Abilio Prado Calderón', 'YUFC9051559BÑ','Magister',9121561066);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Alejo Salvador Becerra', 'GIGM6454913GW','Licenciado',2441724673);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Ramón Duran Riera', 'QARJ7700029GK','Licenciado',3801484212);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Iris de Oliveras', 'JAFY2986221WJ','Doctorado',9732075274);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Amparo Piña Noguera', 'ZEGN8724375ZC','Magister',4878562927);
+insert into Ingeniero (Nom,Ced,GEM,Tel)values ('Estela Palomo Saldaña', 'VAJT3728428ZZ','Licenciado',5036003785);
 
 --Cliente(RFC, nombre, Direccion, Tel)
 insert into Cliente values ('HOMB7638996ÑÑ','Lara Beltran-Solé', 'Aquiles Serdan, #203,Baltazar, 72550, Puebla, Puebla, Mexico',0507668057);
 insert into Cliente values ('RIFH5742707DN','Máximo Garzón Ferreras', 'Ruta matamoros, #7803,Mariano, 22206, Tijuana, Baja California, Mexico',0677554623);
 insert into Cliente values ('LIZG7911705XS','Tere Salvà', 'Poniente, #2304, San Antonio, 75480, Tecamachalco, Puebla, Mexico',3812620856);
-insert into Cliente values ('QIDJ0993026RD','Rosalinda Carrasco Osorio', 'Ingenieros militares, #36, Lomas de sotelo, 55908, Toluca, Estado de Mexico, Mexico',9986250893;
+insert into Cliente values ('QIDJ0993026RD','Rosalinda Carrasco Osorio', 'Ingenieros militares, #36, Lomas de sotelo, 55908, Toluca, Estado de Mexico, Mexico',9986250893);
 insert into Cliente values ('ÑOLV3170437KG','Encarnación Iborra Torrens', 'Juan Bautista, #75, Altamirano, 40660, Pungarabato, Guerrero, Mexico',3459124965);
 insert into Cliente values ('DATD3914462BV','Celestina Vázquez-Llanos', 'Vicente Camacho, #3213, Chapalita, Guadalajara, Jalisco',8755532651);
 insert into Cliente values ('PAXZ8223686XX','Rodrigo Pascual Recio', 'Paseo del hospicio, #22, San Juan, 44360, Guadalajara, Jalisco, Mexico',5394662050); 	
 insert into Cliente values ('MEMW6359107MY','Edelmiro Toribio Gomez Ferreras', 'Guatemala, #3863, Juarez, 22145, Nuevo Laredo, Tamaulipas, Mexico',2207364124);
-insert into Cliente values ('NIZR2306894CÑ','Emiliano Puig', 'Azueta, #1712, Centro, 82000, Mazatlan, Sinaloa, Mexico',2154867627;    
+insert into Cliente values ('NIZR2306894CÑ','Emiliano Puig', 'Azueta, #1712, Centro, 82000, Mazatlan, Sinaloa, Mexico',2154867627);    
 insert into Cliente values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Perez, #1004, Centro, 91700, Veracruz, Veracruz, Mexico',8103149467);    
     
 --Herencias
@@ -70,16 +70,16 @@ insert into Cliente values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Pere
 --armadura()
 
 --Categoria(piezas)
-insert into Categoria values ('pzaGrande','ninguna');
-insert into Categoria values ('pzaChica','ninguna');
-insert into Categoria values ('pzaGrande','ninguna');
-insert into Categoria values ('pzaChica','ninguna');
-insert into Categoria values ('pzaGrande','ninguna');
-insert into Categoria values ('pzaGrande','ninguna');
-insert into Categoria values ('upperBody','casco');
-insert into Categoria values ('lowerBody','0.35');
-insert into Categoria values ('upperBody','brazo');
-insert into Categoria values ('pzaGrande','ninguna');
+insert into Categoria(Nom, Info) values ('pzaGrande','ninguna');
+insert into Categoria (Nom, Info)values ('pzaChica','ninguna');
+insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
+insert into Categoria (Nom, Info)values ('pzaChica','ninguna');
+insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
+insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
+insert into Categoria (Nom, Info)values ('upperBody','casco');
+insert into Categoria (Nom, Info)values ('lowerBody','0.35');
+insert into Categoria (Nom, Info)values ('upperBody','brazo');
+insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
 
 insert into Dimensiones values ('0.45','0.53','1.43');	
 insert into Dimensiones values ('0.34','0.32','0.25');	
