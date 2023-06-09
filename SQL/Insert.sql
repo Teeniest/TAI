@@ -19,16 +19,17 @@ insert into Fabricante values ('HETL850904XU7', 'Luis Roberto Hernandez Torres',
 
 
 --Piezas (id_pza, linea, color)
-insert into Piezas (Lin,Color)values('001','Azul');
-insert into Piezas (Lin,Color)values('001','Rojo');
-insert into Piezas (Lin,Color)values('002','Rojo');
-insert into Piezas (Lin,Color)values('002','Verde');
-insert into Piezas (Lin,Color)values('003','Negro');
-insert into Piezas (Lin,Color)values('002','Naranja');
-insert into Piezas (Lin,Color)values('005','Amarillo');
-insert into Piezas (Lin,Color)values('003','Rosa');
-insert into Piezas (Lin,Color)values('004','Blanco');
-insert into Piezas (Lin,Color)values('001','Negro');
+insert into Piezas (Lin,Color)values('001','Azul','pzaGrande','no',0.45,0.53,1.43);
+insert into Piezas (Lin,Color)values('001','Rojo','pzaChica','no',0.34,0.32,0.25);
+insert into Piezas (Lin,Color)values('002','Rojo','pzaGrande','no',0.64,0.54,0.64);
+insert into Piezas (Lin,Color)values('002','Verde','pzaChica','no',0.15,0.85,1.43);
+insert into Piezas (Lin,Color)values('003','Negro','pzaGrande','no',0.73,0.97,0.25);
+insert into Piezas (Lin,Color)values('002','Naranja','pzaGrande','no',0.78,0.84,1.75);
+insert into Piezas (Lin,Color)values('005','Amarillo','upperBody','casco',0.14,0.87,1.13));
+insert into Piezas (Lin,Color)values('003','Rosa','lowerBody',0.35,0.76,0.42,1.74);
+insert into Piezas (Lin,Color)values('004','Blanco','upperBody','brazo',0.96,0.51,0.64);
+insert into Piezas (Lin,Color)values('001','Negro','pzaGrande','no',0.54,0.12,0.86);
+
 
 --Distribuidor (Nombre, RFC, tel, Direccion)
 insert into Distribuidor values ('Piezas Roco', 'FAYF6890728CH',4687649166, 'Calo, #57,Flores del valle, 17445, Tulum, Quintana Roo, Mexico');
@@ -70,27 +71,6 @@ insert into Cliente values ('BIDF1545464YQ','Mercedes del Pizarro', 'Alacio Pere
 --armadura()
 
 --Categoria(piezas)
-insert into Categoria(Nom, Info) values ('pzaGrande','ninguna');
-insert into Categoria (Nom, Info)values ('pzaChica','ninguna');
-insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
-insert into Categoria (Nom, Info)values ('pzaChica','ninguna');
-insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
-insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
-insert into Categoria (Nom, Info)values ('upperBody','casco');
-insert into Categoria (Nom, Info)values ('lowerBody','0.35');
-insert into Categoria (Nom, Info)values ('upperBody','brazo');
-insert into Categoria (Nom, Info)values ('pzaGrande','ninguna');
-
-insert into Dimensiones values ('0.45','0.53','1.43');	
-insert into Dimensiones values ('0.34','0.32','0.25');	
-insert into Dimensiones values ('0.64','0.54','0.64');	
-insert into Dimensiones values ('0.15','0.85','1.43');	
-insert into Dimensiones values ('0.73','0.97','0.25');	
-insert into Dimensiones values ('0.78','0.84','1.75');	
-insert into Dimensiones values ('0.14','0.87','1.13');	
-insert into Dimensiones values ('0.76','0.42','1.74');	
-insert into Dimensiones values ('0.96','0.51','0.64');	
-insert into Dimensiones values ('0.54','0.12','0.86');	
 
 insert into Arm_Ing values(12);
 insert into Arm_Ing values(1);

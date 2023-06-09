@@ -18,6 +18,11 @@ create table Piezas(
 	ID_pza serial not null, 
 	Lin int not null,	  --Se considera numerico de 3 caract
 	Color varchar(20) not null,  --Nombre completo del color
+	Cat varchar(9) not null, --Categorias: pzgrande,pzachica,lowerbody,upperbody(Maximo 9 caracteres)
+	Inf_cat varchar(5),		--lower body: Altura y upperbody: tipo(brazo, pecho,casco)
+	Ancho decimal(4,4) not null,
+	Alto decimal(4,4) not null,
+	Largo decimal(4,4) not null,
 	--Llaves primarias
 	constraint pk_piezas primary key (ID_pza)
 );
@@ -37,7 +42,7 @@ create table Distribuidor(
 create table Ingeniero(
 	ID_ing serial not null, 
 	Nom varchar(50) not null,
-	Ced char(10) not null,
+	Ced char(13) not null,
 	GEM varchar(20) not null,	  --Nombre completo del grado
 	Tel bigint not null,
 	--Llaves primarias
@@ -52,16 +57,6 @@ create table Cliente(
 	constraint pk_cliente primary key (RFC)
 );
 
-create table Categoria (
-	ID_cat serial,	
-	Nom varchar(9) check(Nom in ('pzgrande','pzachica','lowerbody','upperbody')),	    --Categorias: pzgrande,pzachica,lowerbody,upperbody(Maximo 9 caracteres)
-	Info varchar(5)		--lower body: Altura y upperbody: tipo(brazo, pecho,casco)
-) inherits(Piezas);
-create table Dimensiones (
-	Ancho decimal(4,4),
-	Alto decimal(4,4),
-	Largo decimal(4,4)
-) inherits(Piezas);
 --Tablas que se desprenden de una relacion entre 2 tablas 
 create table Pie_Arm (
 	CTP int,
