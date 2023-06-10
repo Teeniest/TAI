@@ -25,18 +25,45 @@ public class interfazGraf {
 	    tp.add("Alta",p2);  
 	    tp.add("Baja",p3);
 	    tp.add("Modificación",p4);
-	    //Agregar labels
+	    
+	    
+	    //Panel Consulta
+	    
+	    //Labels
 	    JLabel lid=new JLabel("Búsqueda por ID");
-	    lid.setBounds(0,0,300,20);
+	    lid.setBounds(0,50,300,20);
         p1.add(lid);
-        //JLabel lcol=new JLabel("Búsqueda por Color");
-	    //lcol.setBounds(1,10,30,30);
-        //p1.add(lcol);
+        JLabel lcol=new JLabel("Búsqueda por Color");
+	    lcol.setBounds(0,90,300,20);
+        p1.add(lcol);
+        JLabel llin=new JLabel("Búsqueda por Linea");
+	    llin.setBounds(0,130,300,20);
+        p1.add(llin);
+        JLabel lcat=new JLabel("Búsqueda por Categoria");
+	    lcat.setBounds(0,170,300,20);
+        p1.add(lcat);
+        
         //Agregar campos de texto
         JTextField tf_id=new JTextField("");  
-        tf_id.setBounds(120,0, 120,20);
+        tf_id.setBounds(200,50, 120,20);
         p1.add(tf_id);
-	    //Config ventana
+        JTextField tf_col=new JTextField("");  
+        tf_col.setBounds(200,90, 120,20);
+        p1.add(tf_col);
+        JTextField tf_lin=new JTextField("");  
+        tf_lin.setBounds(200,130, 120,20);
+        p1.add(tf_lin);
+        JTextField tf_cat=new JTextField("");  
+        tf_cat.setBounds(200,170, 120,20);
+        p1.add(tf_cat);
+	    
+        //Botones
+        JButton b1=new JButton("Buscar");     
+        b1.setBounds(100,220,100,30);  
+        p1.add(b1);
+        
+        
+        //Config ventana
 	    ventana.add(tp);  
 	    ventana.setSize(800,400);  
 	    ventana.setLayout(null);  
