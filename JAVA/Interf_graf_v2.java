@@ -55,7 +55,9 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
         largo.setText(null);
     }
     public Interf_graf_v2() {
-        initComponents();
+    	initComponents();
+    	mensajeInicial();
+        
     }
                       
     private void initComponents() {
@@ -282,7 +284,27 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
 
         pack();
     }                 
-
+    
+    
+    private void mensajeInicial() {
+    	JOptionPane.showMessageDialog(null, "Instrucciones "
+    			+ "\nEs necesario realizar una búsqueda para borrar o modificar "
+    			+ "\nun registro, existen 4 tipos de búsquedas: por ID, linea, "
+    			+ "\ncolor o categoria, con su respectivo botón a la derecha"
+    			+ "\n(considere que la opción id encuentra un único registro, "
+    			+ "\nmientras que linea, color o categoria pueden encontrar "
+    			+ "\nregistros con las mismas características pero solo se "
+    			+ "\nmostrará el primer registro encontrado). Para dar de alta "
+    			+ "\nuna pieza ingrese los datos en los campos y presione el botón (Alta) ");
+    	JOptionPane.showMessageDialog(null, "Cada campo tiene un tipo de dato:"
+    			+ "\nid: Int"
+    			+ "\nlinea: Int"
+    			+ "\ncolor: String (20 caracteres max.)"
+    			+ "\ncategoria: String (9 caracteres max.)"
+    			+ "\ninformación de categoría: String (5 caracteres max.)"
+    			+ "\nalto, ancho y largo: Float");
+    }
+    
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {                                          
         Connection con = null;
         try {
