@@ -281,7 +281,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>                        
+    }                 
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {                                          
         Connection con = null;
@@ -307,8 +307,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
             }
         }
         catch(Exception e) {
-            JOptionPane.showMessageDialog(null, "Error"+e);
-            System.err.println(e);
+            JOptionPane.showMessageDialog(null, "Error: "+e);
             limpiartextFields();
         }
     }                                         
@@ -327,14 +326,13 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
                 limpiartextFields();
             }
             else {
-                JOptionPane.showMessageDialog(null, "Error");
+                JOptionPane.showMessageDialog(null, "Borrado no registrado");
                 limpiartextFields();
             }
             con.close();
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null, "Error: "+e);
-            System.err.println(e);
             limpiartextFields();
         }
     }                                       
@@ -361,14 +359,13 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
                 limpiartextFields();
             }
             else {
-                JOptionPane.showMessageDialog(null, "Error");
+                JOptionPane.showMessageDialog(null, "Modificación no registrada");
                 limpiartextFields();
             }
             con.close();
         }
         catch(Exception e){
-            JOptionPane.showMessageDialog(null, "Error");
-            System.err.println(e);
+            JOptionPane.showMessageDialog(null, "Error: "+e);
             limpiartextFields();
         }
     }                                      
@@ -401,7 +398,6 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
         }
         catch(Exception e){
             JOptionPane.showMessageDialog(null,"Error: "+e);
-            System.err.println(e);
             limpiartextFields();
         }
     }                                       
@@ -426,11 +422,12 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
                 largo.setText((rs.getString("largo")));
             }
             else {
-                JOptionPane.showMessageDialog(null, "Clave no encontrada");
+                JOptionPane.showMessageDialog(null, "Linea no encontrada");
             }
         }
         catch(Exception e) {
-            System.err.println(e);
+        	JOptionPane.showMessageDialog(null,"Error: "+e);
+            limpiartextFields();
         }
     }                                            
 
@@ -454,11 +451,12 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
                 largo.setText((rs.getString("largo")));
             }
             else {
-                JOptionPane.showMessageDialog(null, "Clave no encontrada");
+                JOptionPane.showMessageDialog(null, "Color no encontrado");
             }
         }
         catch(Exception e) {
-            System.err.println(e);
+        	JOptionPane.showMessageDialog(null,"Error: "+e);
+            limpiartextFields();
         }
     }                                            
 
@@ -482,16 +480,18 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
                 largo.setText((rs.getString("largo")));
             }
             else {
-                JOptionPane.showMessageDialog(null, "Clave no encontrada");
+                JOptionPane.showMessageDialog(null, "Categoria no encontrada");
             }
         }
         catch(Exception e) {
-            System.err.println(e);
+        	JOptionPane.showMessageDialog(null,"Error: "+e);
+            limpiartextFields();
         }
     }                                            
 
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {                                           
         limpiartextFields();
+        JOptionPane.showMessageDialog(null,"Limpieza de campos realizada");
     }                                          
 
 
