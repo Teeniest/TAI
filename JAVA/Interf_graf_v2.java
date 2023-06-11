@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 public class Interf_graf_v2 extends javax.swing.JFrame {
+	
 	private static String user = "caballero"; //User de la BD
 	private static String pswd = "121499"; //Password de la BD
 	private static String bd = "PF_Stark"; //Nombre de la BD
@@ -57,7 +58,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
     public Interf_graf_v2() {
         initComponents();
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
@@ -87,7 +88,8 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Stark Industries");
-
+        setResizable(false);
+        
         jLabel5.setText("Id pieza");
 
         jLabel6.setText("Linea");
@@ -259,7 +261,31 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {                                          
-        
+        Connection con = null;
+        try {
+        	con=conexion();
+        	ps=con.prepareStatement("select * from piezas where id_pza = ?");
+        	ps.setInt(1, Integer.parseInt(id_pza.getText()));
+        	
+        	rs=ps.executeQuery();
+        	
+        	if(rs.next()) {
+        		id_pza.setText((rs.getString("id_pza")));
+        		linea.setText((rs.getString("lin")));
+        		color.setText((rs.getString("color")));
+        		categoria.setText((rs.getString("cat")));
+        		info_cat.setText((rs.getString("inf_cat")));
+        		ancho.setText((rs.getString("ancho")));
+        		alto.setText((rs.getString("alto")));
+        		largo.setText((rs.getString("largo")));
+        	}
+        	else {
+        		JOptionPane.showMessageDialog(null, "Clave no encontrada");
+        	}
+        }
+        catch(Exception e) {
+        	System.err.println(e);
+        }
     }                                         
 
     private void btnbajaActionPerformed(java.awt.event.ActionEvent evt) {                                        
