@@ -289,15 +289,59 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
     }                                         
 
     private void btnbajaActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        // TODO add your handling code here:
+    	Connection con = null;
+    	try {
+    		con = conexion();
+    		ps = con.prepareStatement("delete from piezas where id_pza=?");
+    		
+    		ps.setInt(1, Integer.parseInt(id_pza.getText())); //parse permite transformar la variable
+    		
+    		int res=ps.executeUpdate();
+    		if (res>0) {
+    			JOptionPane.showMessageDialog(null,"Borrado exitoso");
+    			limpiartextFields();
+    		}
+    		else {
+    			JOptionPane.showMessageDialog(null, "Error");
+    			limpiartextFields();
+    		}
+    		con.close();
+    	}
+    	catch(Exception e){
+    		System.err.println(e);
+    	}
     }                                       
-
-    private void altoActionPerformed(java.awt.event.ActionEvent evt) {                                     
-        // TODO add your handling code here:
-    }                                    
-
+                         
     private void btnmodActionPerformed(java.awt.event.ActionEvent evt) {                                       
-        // TODO add your handling code here:
+    	Connection con = null;
+    	try {
+    		con = conexion();
+    		ps = con.prepareStatement("update piezas set id_pza=?, lin=?, color=?, cat=?, inf_cat=?,ancho=?,alto=?, largo=? where id_pza=?");
+    		
+    		ps.setInt(1, Integer.parseInt(id_pza.getText())); //parse permite transformar la variable
+    		ps.setInt(2, Integer.parseInt(linea.getText()));
+    		ps.setString(3, color.getText());
+    		ps.setString(4, categoria.getText());
+    		ps.setString(5, info_cat.getText());
+    		ps.setFloat(6, Float.parseFloat(alto.getText()));
+    		ps.setFloat(7, Float.parseFloat(ancho.getText()));
+    		ps.setFloat(8, Float.parseFloat(largo.getText()));
+    		ps.setInt(9, Integer.parseInt(id_pza.getText()));
+    		
+    		int res=ps.executeUpdate();
+    		if (res>0) {
+    			JOptionPane.showMessageDialog(null,"Modificación exitosa");
+    			limpiartextFields();
+    		}
+    		else {
+    			JOptionPane.showMessageDialog(null, "Error");
+    			limpiartextFields();
+    		}
+    		con.close();
+    	}
+    	catch(Exception e){
+    		System.err.println(e);
+    	}
     }                                      
 
     private void btnaltaActionPerformed(java.awt.event.ActionEvent evt) {                                        
@@ -317,7 +361,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
     		
     		int res=ps.executeUpdate();
     		if (res>0) {
-    			JOptionPane.showMessageDialog(null,"Alta finalizada correctamente");
+    			JOptionPane.showMessageDialog(null,"Alta exitosa");
     			limpiartextFields();
     		}
     		else {
