@@ -8,16 +8,16 @@ public class Main {
 		BaseDatos conexion =  new BaseDatos();
 		ResultSet result;
 
-		//int Tel;
+		//Declaracion de las variables necesarias para guardar los datos que se obtuvieron de la base de datos
 		String id_pza;
 		String ancho,col,info_cat,Linea,alto,largo,fabricante;
-		
+		//Conexion con base de datos
 		result = conexion.getQuery("select * from Piezas");
 		try
 		{
 			while(result.next())
 			{
-				//Tel = result.getInt("Tel");
+				//Obtencion de los datos de la base de datos
 				id_pza = result.getString("ID_pza");
 				Linea = result.getString("Lin");
 				col = result.getString("Color");
@@ -41,16 +41,12 @@ public class Main {
 		{
 			e.printStackTrace();
 		}
-		//Interfaz grafica
+		//Interfaz grafica (interfaz en desuso)
 		//interfazGraf menu =  new interfazGraf();
 		
 		
-		/* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
+		//Nimbus look and feel
+		try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
@@ -66,9 +62,8 @@ public class Main {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Interf_graf_v2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
+		//para mandar a llamar la ventana: Interfaz grafica, sin problemas (realizado por netbeans, se encuentra en el codigo
+		//fuente del diseño, es necesario pasarlo al main)
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Interf_graf_v2().setVisible(true);

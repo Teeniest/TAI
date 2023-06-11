@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 
 public class Interf_graf_v2 extends javax.swing.JFrame {
 
+	//paamretros necesarios para la conexion
     private static final long serialVersionUID = 1L;
     private static String user = "caballero"; //User de la BD
     private static String pswd = "121499"; //Password de la BD
@@ -61,7 +62,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
     }
                       
     private void initComponents() {
-
+    	
         jPanel5 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -135,8 +136,8 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
         jLabel2.setText("Ancho");
 
         jLabel3.setText("Largo");
-
-
+        
+        
         btnbuscarlin.setText("Buscar");
         btnbuscarlin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,7 +165,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
                 btnLimpiarActionPerformed(evt);
             }
         });
-
+        //parte grafica, no modificar
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -285,7 +286,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
         pack();
     }                 
     
-    
+    //Mensaje inicial mediante un JOptionPane
     private void mensajeInicial() {
     	JOptionPane.showMessageDialog(null, "Instrucciones "
     			+ "\nEs necesario realizar una búsqueda para borrar o modificar "
@@ -304,17 +305,17 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
     			+ "\ninformación de categoría: String (5 caracteres max.)"
     			+ "\nalto, ancho y largo: Float");
     }
-    
+    //Boton de busqueda por id
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {                                          
         Connection con = null;
         try {
-            con=conexion();
-            ps=con.prepareStatement("select * from piezas where id_pza = ?");
+            con=conexion();//Establece conexion
+            ps=con.prepareStatement("select * from piezas where id_pza = ?");//Inserta el query
             ps.setInt(1, Integer.parseInt(id_pza.getText()));
             
-            rs=ps.executeQuery();
+            rs=ps.executeQuery();//ejecuta query
             
-            if(rs.next()) {
+            if(rs.next()) {//si la ejecucion ocurre sin problema obtenemos los datos y los seteamos a los campos vacios
                 id_pza.setText((rs.getString("id_pza")));
                 linea.setText((rs.getString("lin")));
                 color.setText((rs.getString("color")));
@@ -324,16 +325,16 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
                 alto.setText((rs.getString("alto")));
                 largo.setText((rs.getString("largo")));
             }
-            else {
-                JOptionPane.showMessageDialog(null, "Clave no encontrada");
+            else {//Si no existe el id se manda mensaje a pantalla
+                JOptionPane.showMessageDialog(null, "Id no encontrado");
             }
         }
-        catch(Exception e) {
+        catch(Exception e) {//Se muestra mensaje si ocurre un error, se concatena el error 
             JOptionPane.showMessageDialog(null, "Error: "+e);
             limpiartextFields();
         }
     }                                         
-
+    //Boton de baja 
     private void btnbajaActionPerformed(java.awt.event.ActionEvent evt) {                                        
          Connection con = null;
         try {
@@ -358,7 +359,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
             limpiartextFields();
         }
     }                                       
-
+    //boton de modificacion
     private void btnmodActionPerformed(java.awt.event.ActionEvent evt) {                                       
         Connection con = null;
         try {
@@ -391,7 +392,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
             limpiartextFields();
         }
     }                                      
-
+    //boton de alta
     private void btnaltaActionPerformed(java.awt.event.ActionEvent evt) {                                        
         Connection con = null;
         try {
@@ -423,7 +424,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
             limpiartextFields();
         }
     }                                       
-
+    //boton de busqueda por linea
     private void btnbuscarlinActionPerformed(java.awt.event.ActionEvent evt) {                                             
         Connection con = null;
         try {
@@ -452,7 +453,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
             limpiartextFields();
         }
     }                                            
-
+    //boton de busqueda por color
     private void btnbuscarcolActionPerformed(java.awt.event.ActionEvent evt) {                                             
         Connection con = null;
         try {
@@ -481,7 +482,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
             limpiartextFields();
         }
     }                                            
-
+    //boton de busqueda por categoria
     private void btnbuscarcatActionPerformed(java.awt.event.ActionEvent evt) {                                             
         Connection con = null;
         try {
@@ -510,7 +511,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
             limpiartextFields();
         }
     }                                            
-
+    //boton que ejecuta la limpieza de campos [limpiartestFields()]
     private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {                                           
         limpiartextFields();
         JOptionPane.showMessageDialog(null,"Limpieza de campos realizada");
