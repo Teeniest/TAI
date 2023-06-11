@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 
 public class Interf_graf_v2 extends javax.swing.JFrame {
 	
+	private static final long serialVersionUID = 1L;
 	private static String user = "caballero"; //User de la BD
 	private static String pswd = "121499"; //Password de la BD
 	private static String bd = "PF_Stark"; //Nombre de la BD
@@ -85,6 +86,7 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
         ancho = new javax.swing.JTextField();
         largo = new javax.swing.JTextField();
         id_pza_guarda = new javax.swing.JTextField();
+        id_pza_guarda.setVisible(false);//No se utilizo
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Stark Industries");
@@ -133,12 +135,6 @@ public class Interf_graf_v2 extends javax.swing.JFrame {
         jLabel2.setText("Ancho");
 
         jLabel3.setText("Largo");
-
-        alto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                altoActionPerformed(evt);
-            }
-        });
 
         id_pza_guarda.setEnabled(false);
 
