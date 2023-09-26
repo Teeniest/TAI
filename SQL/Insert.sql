@@ -1,4 +1,4 @@
---Fabricante
+	--Fabricante
 
 --Orden para ingresar los datos
 --RFC char(13) not null 

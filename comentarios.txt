@@ -1,8 +1,0 @@
-Maestra, disculpe. Le comento que en el proyecto yo estaba diseñando 
-una interfaz grafica mediante puro código, conforme investigaba las funcoones en 
-JFrame, pero la verdad me estaba tomando más tiempo de lo normal, entonces como 
-observe que la mayoría de tutoriales usaba Netbeans para diseñar la interfaz y por
-lo tanto eso fue lo que yo hice, pero aún así deje la interfaz que estaba haciendo
-en un principio. Otro comentario,tuve que ver algunos tutoriales para los get y set,
-tambien para efectuar la conexion, trate de utilizar el codigo que nos proporcionó
-para este último apartado pues era muy parecido, es todo maestra.
